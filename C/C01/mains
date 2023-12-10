@@ -1,0 +1,161 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    mains                                              :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: cdomet-d <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/07/10 11:34:56 by cdomet-d          #+#    #+#              #
+#    Updated: 2023/07/10 11:55:00 by cdomet-d         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+// C01 - Mains
+
+// EX00 ft_ft.c 
+
+int  main(void)d
+{    
+	int     n;
+	int     *nbr;
+	
+	nbr = &n;
+	ft_ft(nbr);
+	printf("%d", *nbr);
+}
+
+// EX01 ft_ultimate_ft.c
+int  main(void)
+{
+        int     n;
+        int     *nbr;
+        int     **nbr1;
+        int     ***nbr2;
+        int     ****nbr3;
+        int     *****nbr4;
+        int     ******nbr5;
+        int     *******nbr6;
+        int     ********nbr7;
+        int     *********nbr8;
+
+        n = 1;
+        nbr = &n;
+        nbr1 = &nbr;
+        nbr2 = &nbr1;
+        nbr3 = &nbr2;
+        nbr4 = &nbr3;
+        nbr5 = &nbr4;
+        nbr6 = &nbr5;
+        nbr7 = &nbr6;
+        nbr8 = &nbr7;
+
+        ft_ultimate_ft(nbr8);
+
+        printf("%d\n", n);
+                
+}
+
+//EX02 ft_swap.c
+int  main(void)
+{
+        int     v1;
+        int     v2;
+        int     *a;
+        int     *b;
+
+        a = &v1;
+        b = &v2;
+        v1 = 5;
+        v2 = 8;
+        printf("v1 = %d\n", *a);
+        printf("v2 = %d\n", *b);
+        ft_swap(a, b);
+        printf("After swap, V1 is %d\n", *a     printf("After swap, V2 is %d\n", *b);           
+}
+
+// EX03 ft_div_mod.c 
+int  main(void)
+{
+        int     *div;
+        int     *mod;
+        int     a_div;
+        int     a_mod;
+
+        div = &a_div;
+        mod = &a_mod;
+        
+        ft_div_mod(10, 2, div, mod);
+        printf("div = %d\nmod = %d\n", *div, *mod);
+                
+}
+
+//EX05 ft_putstr.c
+int  main(void)
+
+{
+        char str[12] = "\0";
+        ft_putstr(str);
+}
+
+//EX06 ft_strlen.c
+int  main(void)
+{
+        char    str[25] = "";
+        int r;
+
+        r = ft_strlen(str);
+        printf("str =  %d\n", r);
+}
+
+//EX07 ft_rev_int_tab.c
+/* void ft_print_array(int *arr, int size)
+{
+        int     i;
+        
+        i = 0;
+
+        while(i < size)
+        {
+                printf("%d ", arr[i]);
+                i++;
+        }
+}
+
+int     main(void)
+{
+        int     size;
+        int     tab[5] = {1, 2, 3, 4, 5};
+        size = 5;
+        ft_rev_int_tab(tab, size);
+        ft_print_array(tab, size);      
+} */
+
+
+// EX08 ft_sort_int_tab.c
+#include <stdio.h>
+
+void    ft_print_array(int *arr, int size);
+void    ft_sort_int_tab(int *tab, int size);
+
+int     main(void)
+{
+        int     tab[5] = {5, 4, 3, 2, 1};
+        ft_print_array(tab, 5);
+        printf("\n");
+        ft_sort_int_tab(tab, 5);
+        ft_print_array(tab, 5);
+} */
+
+/* void ft_print_array(int *arr, int size)
+{
+        int     i;
+
+        i = 0;
+
+        while(i < size)
+        {
+                printf("%d ", arr[i]);
+                i++;
+        }
+}
+
